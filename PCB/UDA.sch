@@ -1,0 +1,840 @@
+EESchema Schematic File Version 2
+LIBS:Power
+LIBS:7_Segments_TH
+LIBS:ArduProMini
+LIBS:device
+LIBS:Leds_TH
+LIBS:Barrettes_TH
+LIBS:Resistances_SMD_0603
+LIBS:Microcontroleur_Atmel_SMD_TQFP
+LIBS:Condensateurs_SMD_0603
+LIBS:Regulateurs_SMD_SOT23
+LIBS:afr-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HDSP-U113 LED1
+U 1 1 55F33906
+P 3500 1650
+F 0 "LED1" H 3100 2380 50  0000 L CNN
+F 1 "HDSP-U113" H 3100 950 50  0000 L CNN
+F 2 "afficheurs:HDSP-U113" H 3100 2450 50  0001 L CNN
+F 3 "" H 3500 1650 60  0000 C CNN
+	1    3500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HDSP-U113 LED2
+U 1 1 55F33953
+P 5100 1650
+F 0 "LED2" H 4700 2380 50  0000 L CNN
+F 1 "HDSP-U113" H 4700 950 50  0000 L CNN
+F 2 "afficheurs:HDSP-U113" H 4700 2450 50  0001 L CNN
+F 3 "" H 5100 1650 60  0000 C CNN
+	1    5100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HDSP-U113 LED3
+U 1 1 55F33A0A
+P 6800 1650
+F 0 "LED3" H 6400 2380 50  0000 L CNN
+F 1 "HDSP-U113" H 6400 950 50  0000 L CNN
+F 2 "afficheurs:HDSP-U113" H 6400 2450 50  0001 L CNN
+F 3 "" H 6800 1650 60  0000 C CNN
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1250 2400 1250
+Wire Wire Line
+	4500 1250 4350 1250
+Wire Wire Line
+	6200 1250 6050 1250
+Text GLabel 2400 1250 0    50   Input ~ 0
+A
+Text GLabel 4350 1250 0    50   Input ~ 0
+A
+Text GLabel 6050 1250 0    50   Input ~ 0
+A
+Wire Wire Line
+	2900 1350 2400 1350
+Wire Wire Line
+	2900 1450 2400 1450
+Wire Wire Line
+	2900 1550 2400 1550
+Wire Wire Line
+	2900 1650 2400 1650
+Wire Wire Line
+	2900 1750 2400 1750
+Wire Wire Line
+	2900 1850 2400 1850
+Wire Wire Line
+	2900 2050 2400 2050
+Wire Wire Line
+	2900 2150 2850 2150
+Wire Wire Line
+	2850 2150 2850 1050
+Wire Wire Line
+	2400 1050 2900 1050
+Connection ~ 2850 1050
+Text GLabel 2400 1350 0    50   Input ~ 0
+B
+Text GLabel 2400 1450 0    50   Input ~ 0
+C
+Text GLabel 2400 1550 0    50   Input ~ 0
+D
+Text GLabel 2400 1650 0    50   Input ~ 0
+E
+Text GLabel 2400 1750 0    50   Input ~ 0
+F
+Text GLabel 2400 1850 0    50   Input ~ 0
+G
+Text GLabel 2400 2050 0    50   Input ~ 0
+DP
+Text GLabel 2400 1050 0    50   Input ~ 0
+COM1
+Wire Wire Line
+	4500 1350 4350 1350
+Wire Wire Line
+	4500 1450 4350 1450
+Wire Wire Line
+	4500 1550 4350 1550
+Wire Wire Line
+	4500 1650 4350 1650
+Wire Wire Line
+	4500 1750 4350 1750
+Wire Wire Line
+	4500 1850 4350 1850
+Wire Wire Line
+	4350 1050 4500 1050
+Wire Wire Line
+	4500 2050 4350 2050
+Wire Wire Line
+	4500 2150 4450 2150
+Wire Wire Line
+	4450 2150 4450 1050
+Connection ~ 4450 1050
+Text GLabel 4350 1050 0    50   Input ~ 0
+COM2
+Text GLabel 4350 1350 0    50   Input ~ 0
+B
+Text GLabel 4350 1450 0    50   Input ~ 0
+C
+Text GLabel 4350 1550 0    50   Input ~ 0
+D
+Text GLabel 4350 1650 0    50   Input ~ 0
+E
+Text GLabel 4350 1750 0    50   Input ~ 0
+F
+Text GLabel 4350 1850 0    50   Input ~ 0
+G
+Text GLabel 4350 2050 0    50   Input ~ 0
+DP
+Wire Wire Line
+	6050 1050 6200 1050
+Wire Wire Line
+	6200 2150 6150 2150
+Wire Wire Line
+	6150 2150 6150 1050
+Connection ~ 6150 1050
+Wire Wire Line
+	6200 1350 6050 1350
+Wire Wire Line
+	6200 1450 6050 1450
+Wire Wire Line
+	6200 1550 6050 1550
+Wire Wire Line
+	6200 1650 6050 1650
+Wire Wire Line
+	6200 1750 6050 1750
+Wire Wire Line
+	6200 1850 6050 1850
+Wire Wire Line
+	6200 2050 6050 2050
+Text GLabel 6050 1050 0    50   Input ~ 0
+COM3
+Text GLabel 6050 1350 0    50   Input ~ 0
+B
+Text GLabel 6050 1450 0    50   Input ~ 0
+C
+Text GLabel 6050 1550 0    50   Input ~ 0
+D
+Text GLabel 6050 1650 0    50   Input ~ 0
+E
+Text GLabel 6050 1750 0    50   Input ~ 0
+F
+Text GLabel 6050 1850 0    50   Input ~ 0
+G
+Text GLabel 6050 2050 0    50   Input ~ 0
+DP
+Text GLabel 6300 3850 2    50   Input ~ 0
+D
+Text GLabel 6300 3950 2    50   Input ~ 0
+COM1
+Text GLabel 6300 3650 2    50   Input ~ 0
+E
+Text GLabel 6300 5450 2    50   Input ~ 0
+DP
+Text GLabel 6300 5850 2    50   Input ~ 0
+G
+Text GLabel 6300 5250 2    50   Input ~ 0
+C
+Text GLabel 6300 4150 2    50   Input ~ 0
+F
+Text GLabel 6300 5150 2    50   Input ~ 0
+A
+Text GLabel 6300 5750 2    50   Input ~ 0
+B
+Text GLabel 6300 5050 2    50   Input ~ 0
+COM2
+Text GLabel 6300 4950 2    50   Input ~ 0
+COM3
+$Comp
+L LED D1
+U 1 1 55F43DDC
+P 8400 3950
+F 0 "D1" H 8400 4050 50  0000 C CNN
+F 1 "LED" H 8400 3850 50  0000 C CNN
+F 2 "leds:LED-3MM" H 8400 3950 60  0001 C CNN
+F 3 "" H 8400 3950 60  0000 C CNN
+	1    8400 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 55F44071
+P 8700 3950
+F 0 "D2" H 8700 4050 50  0000 C CNN
+F 1 "LED" H 8700 3850 50  0000 C CNN
+F 2 "leds:LED-3MM" H 8700 3950 60  0001 C CNN
+F 3 "" H 8700 3950 60  0000 C CNN
+	1    8700 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 55F440B8
+P 9000 3950
+F 0 "D3" H 9000 4050 50  0000 C CNN
+F 1 "LED" H 9000 3850 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9000 3950 60  0001 C CNN
+F 3 "" H 9000 3950 60  0000 C CNN
+	1    9000 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 55F44128
+P 9300 3950
+F 0 "D4" H 9300 4050 50  0000 C CNN
+F 1 "LED" H 9300 3850 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9300 3950 60  0001 C CNN
+F 3 "" H 9300 3950 60  0000 C CNN
+	1    9300 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 55F441C3
+P 9600 3950
+F 0 "D5" H 9600 4050 50  0000 C CNN
+F 1 "LED" H 9600 3850 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9600 3950 60  0001 C CNN
+F 3 "" H 9600 3950 60  0000 C CNN
+	1    9600 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 55F442E8
+P 9900 3950
+F 0 "D6" H 9900 4050 50  0000 C CNN
+F 1 "LED" H 9900 3850 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9900 3950 60  0001 C CNN
+F 3 "" H 9900 3950 60  0000 C CNN
+	1    9900 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D7
+U 1 1 55F44351
+P 10200 3950
+F 0 "D7" H 10200 4050 50  0000 C CNN
+F 1 "LED" H 10200 3850 50  0000 C CNN
+F 2 "leds:LED-3MM" H 10200 3950 60  0001 C CNN
+F 3 "" H 10200 3950 60  0000 C CNN
+	1    10200 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 4250 10200 4150
+Wire Wire Line
+	8200 4250 10200 4250
+Wire Wire Line
+	9900 4150 9900 4250
+Connection ~ 9900 4250
+Wire Wire Line
+	9600 4150 9600 4250
+Connection ~ 9600 4250
+Wire Wire Line
+	9300 4150 9300 4250
+Connection ~ 9300 4250
+Wire Wire Line
+	9000 4150 9000 4250
+Connection ~ 9000 4250
+Wire Wire Line
+	8700 4150 8700 4250
+Connection ~ 8700 4250
+Wire Wire Line
+	8400 4150 8400 4250
+Connection ~ 8400 4250
+Text GLabel 8200 4250 0    60   Input ~ 0
+COM4
+$Comp
+L LED D8
+U 1 1 55F44B86
+P 8400 4850
+F 0 "D8" H 8400 4950 50  0000 C CNN
+F 1 "LED" H 8400 4750 50  0000 C CNN
+F 2 "leds:LED-3MM" H 8400 4850 60  0001 C CNN
+F 3 "" H 8400 4850 60  0000 C CNN
+	1    8400 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D9
+U 1 1 55F44B8C
+P 8700 4850
+F 0 "D9" H 8700 4950 50  0000 C CNN
+F 1 "LED" H 8700 4750 50  0000 C CNN
+F 2 "leds:LED-3MM" H 8700 4850 60  0001 C CNN
+F 3 "" H 8700 4850 60  0000 C CNN
+	1    8700 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D10
+U 1 1 55F44B92
+P 9000 4850
+F 0 "D10" H 9000 4950 50  0000 C CNN
+F 1 "LED" H 9000 4750 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9000 4850 60  0001 C CNN
+F 3 "" H 9000 4850 60  0000 C CNN
+	1    9000 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D11
+U 1 1 55F44B98
+P 9300 4850
+F 0 "D11" H 9300 4950 50  0000 C CNN
+F 1 "LED" H 9300 4750 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9300 4850 60  0001 C CNN
+F 3 "" H 9300 4850 60  0000 C CNN
+	1    9300 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D12
+U 1 1 55F44B9E
+P 9600 4850
+F 0 "D12" H 9600 4950 50  0000 C CNN
+F 1 "LED" H 9600 4750 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9600 4850 60  0001 C CNN
+F 3 "" H 9600 4850 60  0000 C CNN
+	1    9600 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D13
+U 1 1 55F44BA4
+P 9900 4850
+F 0 "D13" H 9900 4950 50  0000 C CNN
+F 1 "LED" H 9900 4750 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9900 4850 60  0001 C CNN
+F 3 "" H 9900 4850 60  0000 C CNN
+	1    9900 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D15
+U 1 1 55F44BAA
+P 10200 4850
+F 0 "D15" H 10200 4950 50  0000 C CNN
+F 1 "LED" H 10200 4750 50  0000 C CNN
+F 2 "leds:LED-3MM" H 10200 4850 60  0001 C CNN
+F 3 "" H 10200 4850 60  0000 C CNN
+	1    10200 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 5150 10200 5050
+Wire Wire Line
+	8200 5150 10200 5150
+Wire Wire Line
+	9900 5050 9900 5150
+Connection ~ 9900 5150
+Wire Wire Line
+	9600 5050 9600 5150
+Connection ~ 9600 5150
+Wire Wire Line
+	9300 5050 9300 5150
+Connection ~ 9300 5150
+Wire Wire Line
+	9000 5050 9000 5150
+Connection ~ 9000 5150
+Wire Wire Line
+	8700 5050 8700 5150
+Connection ~ 8700 5150
+Wire Wire Line
+	8400 5050 8400 5150
+Connection ~ 8400 5150
+Text GLabel 8200 5150 0    60   Input ~ 0
+COM5
+$Comp
+L LED D14
+U 1 1 55F45126
+P 8400 5600
+F 0 "D14" H 8400 5700 50  0000 C CNN
+F 1 "LED" H 8400 5500 50  0000 C CNN
+F 2 "leds:LED-3MM" H 8400 5600 60  0001 C CNN
+F 3 "" H 8400 5600 60  0000 C CNN
+	1    8400 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D16
+U 1 1 55F4512C
+P 8700 5600
+F 0 "D16" H 8700 5700 50  0000 C CNN
+F 1 "LED" H 8700 5500 50  0000 C CNN
+F 2 "leds:LED-3MM" H 8700 5600 60  0001 C CNN
+F 3 "" H 8700 5600 60  0000 C CNN
+	1    8700 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D17
+U 1 1 55F45132
+P 9000 5600
+F 0 "D17" H 9000 5700 50  0000 C CNN
+F 1 "LED" H 9000 5500 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9000 5600 60  0001 C CNN
+F 3 "" H 9000 5600 60  0000 C CNN
+	1    9000 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D18
+U 1 1 55F45138
+P 9300 5600
+F 0 "D18" H 9300 5700 50  0000 C CNN
+F 1 "LED" H 9300 5500 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9300 5600 60  0001 C CNN
+F 3 "" H 9300 5600 60  0000 C CNN
+	1    9300 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D19
+U 1 1 55F4513E
+P 9600 5600
+F 0 "D19" H 9600 5700 50  0000 C CNN
+F 1 "LED" H 9600 5500 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9600 5600 60  0001 C CNN
+F 3 "" H 9600 5600 60  0000 C CNN
+	1    9600 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D20
+U 1 1 55F45144
+P 9900 5600
+F 0 "D20" H 9900 5700 50  0000 C CNN
+F 1 "LED" H 9900 5500 50  0000 C CNN
+F 2 "leds:LED-3MM" H 9900 5600 60  0001 C CNN
+F 3 "" H 9900 5600 60  0000 C CNN
+	1    9900 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 5900 10200 5800
+Wire Wire Line
+	8200 5900 10200 5900
+Wire Wire Line
+	9900 5800 9900 5900
+Connection ~ 9900 5900
+Wire Wire Line
+	9600 5800 9600 5900
+Connection ~ 9600 5900
+Wire Wire Line
+	9300 5800 9300 5900
+Connection ~ 9300 5900
+Wire Wire Line
+	9000 5800 9000 5900
+Connection ~ 9000 5900
+Wire Wire Line
+	8700 5800 8700 5900
+Connection ~ 8700 5900
+Wire Wire Line
+	8400 5800 8400 5900
+Connection ~ 8400 5900
+Text GLabel 8200 5900 0    60   Input ~ 0
+COM6
+Wire Wire Line
+	8400 3750 8400 3650
+Text GLabel 8400 4650 1    60   Input ~ 0
+A
+Text GLabel 8700 5400 1    60   Input ~ 0
+A
+Text GLabel 9900 3750 1    60   Input ~ 0
+A
+Text GLabel 8400 3650 1    60   Input ~ 0
+F
+Text GLabel 9000 3750 1    60   Input ~ 0
+G
+Text GLabel 9300 3750 1    60   Input ~ 0
+E
+Text GLabel 9600 3750 1    60   Input ~ 0
+D
+Text GLabel 10200 3750 1    60   Input ~ 0
+C
+Text GLabel 8700 3750 1    60   Input ~ 0
+B
+Text GLabel 8700 4650 1    60   Input ~ 0
+F
+Text GLabel 9000 4650 1    60   Input ~ 0
+D
+Text GLabel 9300 4650 1    60   Input ~ 0
+E
+Text GLabel 9600 4650 1    60   Input ~ 0
+G
+Text GLabel 9900 4650 1    60   Input ~ 0
+B
+Text GLabel 10200 4650 1    60   Input ~ 0
+C
+Text GLabel 9300 5400 1    60   Input ~ 0
+C
+Text GLabel 8400 5400 1    60   Input ~ 0
+B
+Text GLabel 9600 5400 1    60   Input ~ 0
+G
+Text GLabel 9900 5400 1    60   Input ~ 0
+E
+Text GLabel 10200 5400 1    60   Input ~ 0
+D
+Text GLabel 6300 4850 2    50   Input ~ 0
+COM4
+Text GLabel 6300 4750 2    50   Input ~ 0
+COM5
+Text GLabel 6300 5950 2    50   Input ~ 0
+COM6
+$Comp
+L CONN_01X05 P1
+U 1 1 55F53A5A
+P 8550 1050
+F 0 "P1" H 8550 1350 50  0000 C CNN
+F 1 "CONN_01X05" V 8650 1050 50  0000 C CNN
+F 2 "Barrettes:Pin_Header_Straight_1x05" H 8550 1500 60  0001 C CNN
+F 3 "" H 8550 1350 60  0000 C CNN
+F 4 "455-1660-ND" H 8550 1600 50  0001 C CNN "Ref Digikey"
+	1    8550 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 55F53D43
+P 8450 1250
+F 0 "#PWR01" H 8450 1000 50  0001 C CNN
+F 1 "GND" H 8450 1100 50  0000 C CNN
+F 2 "" H 8450 1250 60  0000 C CNN
+F 3 "" H 8450 1250 60  0000 C CNN
+	1    8450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR02
+U 1 1 55F53D89
+P 8350 1350
+F 0 "#PWR02" H 8350 1200 50  0001 C CNN
+F 1 "+9V" H 8350 1490 50  0000 C CNN
+F 2 "" H 8350 1350 60  0000 C CNN
+F 3 "" H 8350 1350 60  0000 C CNN
+	1    8350 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8350 1250 8350 1350
+Wire Wire Line
+	8750 1250 8750 1400
+Wire Wire Line
+	8750 1400 8950 1400
+Text GLabel 8950 1400 2    50   Input ~ 0
+RX
+Text GLabel 6300 4550 2    50   Input ~ 0
+RX
+Wire Wire Line
+	8650 1250 8650 1500
+Wire Wire Line
+	8650 1500 8950 1500
+Text GLabel 8950 1500 2    50   Input ~ 0
+COM_TX
+Text GLabel 6300 4650 2    50   Input ~ 0
+COM_TX
+$Comp
+L MCU-ATMEGA328P-AU(TQFP32) U1
+U 1 1 55F7E619
+P 5350 4800
+F 0 "U1" H 4600 6050 50  0000 L CNN
+F 1 "MCU-ATMEGA328P-AU(TQFP32)" H 4850 6050 50  0000 L CNN
+F 2 "atmel:TQFP32-0.8-7X7MM" H 5350 4800 50  0001 L CNN
+F 3 "" H 5350 4800 60  0000 C CNN
+	1    5350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D21
+U 1 1 55F7FA02
+P 10200 5600
+F 0 "D21" H 10200 5700 50  0000 C CNN
+F 1 "LED" H 10200 5500 50  0000 C CNN
+F 2 "leds:LED-3MM" H 10200 5600 60  0001 C CNN
+F 3 "" H 10200 5600 60  0000 C CNN
+	1    10200 5600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9000 5400 1    50   Input ~ 0
+F
+$Comp
+L +5V #PWR04
+U 1 1 55F87616
+P 4150 5100
+F 0 "#PWR04" H 4150 4950 50  0001 C CNN
+F 1 "+5V" H 4150 5240 50  0000 C CNN
+F 2 "" H 4150 5100 60  0000 C CNN
+F 3 "" H 4150 5100 60  0000 C CNN
+	1    4150 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 5050 4250 5050
+Wire Wire Line
+	4250 5050 4250 5150
+Wire Wire Line
+	4250 5150 4400 5150
+Wire Wire Line
+	4250 5100 4150 5100
+Connection ~ 4250 5100
+$Comp
+L GND #PWR05
+U 1 1 55F87754
+P 4150 4900
+F 0 "#PWR05" H 4150 4650 50  0001 C CNN
+F 1 "GND" H 4150 4750 50  0000 C CNN
+F 2 "" H 4150 4900 60  0000 C CNN
+F 3 "" H 4150 4900 60  0000 C CNN
+	1    4150 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 4850 4400 4850
+Wire Wire Line
+	4250 4850 4250 4950
+Wire Wire Line
+	4250 4950 4400 4950
+Wire Wire Line
+	4250 4900 4150 4900
+Connection ~ 4250 4900
+$Comp
+L 0.1uF C1
+U 1 1 55F883B1
+P 4050 3950
+F 0 "C1" H 4075 4050 50  0000 L CNN
+F 1 "0.1uF" H 4075 3850 50  0000 L CNN
+F 2 "condensateurs:C_0603_HandSoldering" H 4088 3800 30  0001 C CNN
+F 3 "" H 4050 3950 60  0000 C CNN
+F 4 "311-1344-1-ND" V 4230 4050 60  0001 C CNN "Ref Digikey"
+	1    4050 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3950 4200 3950
+$Comp
+L GND #PWR06
+U 1 1 55F884D4
+P 3650 3950
+F 0 "#PWR06" H 3650 3700 50  0001 C CNN
+F 1 "GND" H 3650 3800 50  0000 C CNN
+F 2 "" H 3650 3950 60  0000 C CNN
+F 3 "" H 3650 3950 60  0000 C CNN
+	1    3650 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 3950 3650 3950
+Wire Wire Line
+	4400 3850 3700 3850
+Wire Wire Line
+	3700 3850 3700 3950
+Connection ~ 3700 3950
+$Comp
+L +5V #PWR07
+U 1 1 55F88628
+P 4400 4050
+F 0 "#PWR07" H 4400 3900 50  0001 C CNN
+F 1 "+5V" H 4400 4190 50  0000 C CNN
+F 2 "" H 4400 4050 60  0000 C CNN
+F 3 "" H 4400 4050 60  0000 C CNN
+	1    4400 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 10k R3
+U 1 1 55F89502
+P 10150 1600
+F 0 "R3" V 10230 1600 50  0000 C CNN
+F 1 "10k" V 10150 1600 50  0000 C CNN
+F 2 "resistances:R_0603_HandSoldering" V 10080 1600 30  0001 C CNN
+F 3 "" V 10230 1600 30  0000 C CNN
+F 4 "311-10kGRCT-ND" V 10330 1700 60  0001 C CNN "Ref Digikey"
+	1    10150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C2
+U 1 1 55F895EE
+P 10150 2050
+F 0 "C2" H 10175 2150 50  0000 L CNN
+F 1 "0.1uF" H 10175 1950 50  0000 L CNN
+F 2 "condensateurs:C_0603_HandSoldering" H 10188 1900 30  0001 C CNN
+F 3 "" H 10150 2050 60  0000 C CNN
+F 4 "311-1344-1-ND" V 10330 2150 60  0001 C CNN "Ref Digikey"
+	1    10150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 55F8966C
+P 10150 2400
+F 0 "#PWR08" H 10150 2150 50  0001 C CNN
+F 1 "GND" H 10150 2250 50  0000 C CNN
+F 2 "" H 10150 2400 60  0000 C CNN
+F 3 "" H 10150 2400 60  0000 C CNN
+	1    10150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 55F896BE
+P 10150 1250
+F 0 "#PWR09" H 10150 1100 50  0001 C CNN
+F 1 "+5V" H 10150 1390 50  0000 C CNN
+F 2 "" H 10150 1250 60  0000 C CNN
+F 3 "" H 10150 1250 60  0000 C CNN
+	1    10150 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1250 10150 1450
+Wire Wire Line
+	10150 1750 10150 1900
+Wire Wire Line
+	10150 2200 10150 2400
+Wire Wire Line
+	10150 1800 10350 1800
+Connection ~ 10150 1800
+Text GLabel 10350 1800 2    60   Input ~ 0
+RESET
+Text GLabel 4400 3650 0    60   Input ~ 0
+RESET
+$Comp
+L MIC5205-3.3YM5 U2
+U 1 1 55F8B068
+P 1750 3250
+F 0 "U2" H 1500 3450 50  0000 L CNN
+F 1 "MIC5205-3.3YM5" H 1750 3450 50  0000 L CNN
+F 2 "resgulateurs:SOT-23-5" H 1750 3250 50  0001 L CNN
+F 3 "" H 1750 3250 60  0000 C CNN
+	1    1750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  3250 1350 3250
+Wire Wire Line
+	1350 3150 1250 3150
+Wire Wire Line
+	1250 3150 1250 3250
+Connection ~ 1250 3250
+$Comp
+L +9V #PWR010
+U 1 1 55F8B94C
+P 1000 3250
+F 0 "#PWR010" H 1000 3100 50  0001 C CNN
+F 1 "+9V" H 1000 3390 50  0000 C CNN
+F 2 "" H 1000 3250 60  0000 C CNN
+F 3 "" H 1000 3250 60  0000 C CNN
+	1    1000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 55F8B9A0
+P 1000 3350
+F 0 "#PWR011" H 1000 3100 50  0001 C CNN
+F 1 "GND" H 1000 3200 50  0000 C CNN
+F 2 "" H 1000 3350 60  0000 C CNN
+F 3 "" H 1000 3350 60  0000 C CNN
+	1    1000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  3350 1350 3350
+Wire Wire Line
+	2150 3150 2500 3150
+$Comp
+L +5V #PWR012
+U 1 1 55F8BE1A
+P 2500 3150
+F 0 "#PWR012" H 2500 3000 50  0001 C CNN
+F 1 "+5V" H 2500 3290 50  0000 C CNN
+F 2 "" H 2500 3150 60  0000 C CNN
+F 3 "" H 2500 3150 60  0000 C CNN
+	1    2500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C3
+U 1 1 55F8C1FB
+P 700 3300
+F 0 "C3" H 725 3400 50  0000 L CNN
+F 1 "0.1uF" H 725 3200 50  0000 L CNN
+F 2 "condensateurs:C_0603_HandSoldering" H 738 3150 30  0001 C CNN
+F 3 "" H 700 3300 60  0000 C CNN
+F 4 "311-1344-1-ND" V 880 3400 60  0001 C CNN "Ref Digikey"
+	1    700  3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  3250 850  3150
+Wire Wire Line
+	850  3150 700  3150
+Connection ~ 1000 3250
+Wire Wire Line
+	850  3350 850  3450
+Wire Wire Line
+	850  3450 700  3450
+Connection ~ 1000 3350
+$EndSCHEMATC
