@@ -641,43 +641,43 @@ Text GLabel 2350 5800 0    50   Input ~ 0
 S9
 Text GLabel 2350 5900 0    50   Input ~ 0
 S10
-Text GLabel 8400 3750 1    50   Input ~ 0
+Text GLabel 9300 4650 1    50   Input ~ 0
 S0
-Text GLabel 8700 3750 1    50   Input ~ 0
+Text GLabel 9000 4650 1    50   Input ~ 0
 S1
-Text GLabel 9000 3750 1    50   Input ~ 0
+Text GLabel 8700 4650 1    50   Input ~ 0
 S2
-Text GLabel 9300 3750 1    50   Input ~ 0
+Text GLabel 8400 4650 1    50   Input ~ 0
 S3
-Text GLabel 9600 3750 1    50   Input ~ 0
+Text GLabel 8700 3750 1    50   Input ~ 0
 S4
 Text GLabel 9900 3750 1    50   Input ~ 0
 S5
-Text GLabel 10200 3750 1    50   Input ~ 0
+Text GLabel 8400 3750 1    50   Input ~ 0
 S6
-Text GLabel 8400 4650 1    50   Input ~ 0
+Text GLabel 10200 3750 1    50   Input ~ 0
 S7
-Text GLabel 8700 4650 1    50   Input ~ 0
+Text GLabel 9000 3750 1    50   Input ~ 0
 S8
-Text GLabel 9000 4650 1    50   Input ~ 0
+Text GLabel 9300 3750 1    50   Input ~ 0
 S9
-Text GLabel 9300 4650 1    50   Input ~ 0
+Text GLabel 9600 3750 1    50   Input ~ 0
 S10
 Text GLabel 9600 4650 1    50   Input ~ 0
 S0
 Text GLabel 9900 4650 1    50   Input ~ 0
 S1
-Text GLabel 10200 4650 1    50   Input ~ 0
-S2
 Text GLabel 8400 5400 1    50   Input ~ 0
-S3
-Text GLabel 8700 5400 1    50   Input ~ 0
-S4
-Text GLabel 9000 5400 1    50   Input ~ 0
-S5
-Text GLabel 9300 5400 1    50   Input ~ 0
-S6
+S2
 Text GLabel 9600 5400 1    50   Input ~ 0
+S3
+Text GLabel 9300 5400 1    50   Input ~ 0
+S4
+Text GLabel 10200 4650 1    50   Input ~ 0
+S5
+Text GLabel 8700 5400 1    50   Input ~ 0
+S6
+Text GLabel 9000 5400 1    50   Input ~ 0
 S7
 Text GLabel 9900 5400 1    50   Input ~ 0
 S8
@@ -707,4 +707,44 @@ F 4 "311-0.0GRCT-ND" V 4480 5200 60  0001 C CNN "Ref Digikey"
 	1    4300 5100
 	0    1    1    0   
 $EndComp
+$Comp
+L +5V #PWR05
+U 1 1 55FB3338
+P 8350 1350
+F 0 "#PWR05" H 8350 1200 50  0001 C CNN
+F 1 "+5V" H 8350 1490 50  0000 C CNN
+F 2 "" H 8350 1350 60  0000 C CNN
+F 3 "" H 8350 1350 60  0000 C CNN
+	1    8350 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 55FB3384
+P 9500 1350
+F 0 "#PWR06" H 9500 1100 50  0001 C CNN
+F 1 "GND" H 9500 1200 50  0000 C CNN
+F 2 "" H 9500 1350 60  0000 C CNN
+F 3 "" H 9500 1350 60  0000 C CNN
+	1    9500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1250 8350 1350
+Wire Wire Line
+	9500 1250 9500 1350
+Text GLabel 9900 1250 3    50   Input ~ 0
+LATCH
+Text GLabel 8450 1250 3    50   Input ~ 0
+DSEL
+Text GLabel 8750 1250 3    50   Input ~ 0
+SIN
+Text GLabel 8650 1250 3    50   Input ~ 0
+SCLK
+Text GLabel 9800 1250 3    50   Input ~ 0
+CSEL0
+Text GLabel 9700 1250 3    50   Input ~ 0
+CSEL1
+Text GLabel 8550 1250 3    50   Input ~ 0
+CSEL2
 $EndSCHEMATC
