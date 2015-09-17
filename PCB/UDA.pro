@@ -1,4 +1,4 @@
-update=15/09/2015 20:44:07
+update=17/09/2015 11:01:54
 version=1
 last_client=kicad
 [pcbnew]
@@ -39,3 +39,4 @@ LibName7=Resistances/Resistances_SMD_0603
 LibName8=Circuit Intégré/Microcontroleur/Atmel/Microcontroleur_Atmel_SMD_TQFP
 LibName9=Condensateurs/Condensateurs_SMD_0603
 LibName10=Regulateurs/Regulateurs_SMD_SOT23
+LibName11=Circuit Intégré/Drivers_Afficheurs/Drivers_Afficheurs
