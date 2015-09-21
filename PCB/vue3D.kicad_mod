@@ -12,4 +12,9 @@
     (scale (xyz 0.39 0.39 0.39))
     (rotate (xyz 0 0 0))
   )
+  (model C:/Users/aurmy/Documents/GitHub/Universal_Display_Automotive/PCB/UDA.wrl
+    (at (xyz 0 0 -0.35))
+    (scale (xyz 0.39 0.39 0.39))
+    (rotate (xyz 0 0 0))
+  )
 )
