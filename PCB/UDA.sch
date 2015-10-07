@@ -615,12 +615,6 @@ Text GLabel 3200 1850 0    50   Input ~ 0
 S7
 Text GLabel 4900 1850 0    50   Input ~ 0
 S7
-Text GLabel 1700 1950 0    50   Input ~ 0
-COM5
-Text GLabel 3300 1950 0    50   Input ~ 0
-COM5
-Text GLabel 5000 1950 0    50   Input ~ 0
-COM5
 Text GLabel 2350 4400 0    50   Input ~ 0
 COM5
 Text GLabel 2350 5100 0    50   Input ~ 0
@@ -747,4 +741,10 @@ Text GLabel 9700 1250 3    50   Input ~ 0
 CSEL1
 Text GLabel 8550 1250 3    50   Input ~ 0
 CSEL2
+Text GLabel 1700 1950 0    50   Input ~ 0
+COM0
+Text GLabel 3300 1950 0    50   Input ~ 0
+COM1
+Text GLabel 5000 1950 0    50   Input ~ 0
+COM2
 $EndSCHEMATC
