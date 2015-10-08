@@ -55,6 +55,11 @@
             UDA_MAX_PIN,
          };
          
+         enum
+         {
+            BARGRAPH_LINE = 0,
+            BARGRAPH_DOT,
+         };
          // constructor
          UDA_Driver();
          
@@ -72,5 +77,6 @@
          void PutFloat(float val, uint8_t nbDecimal);
          void PutBargraph(float val);
          void SetBargraphConf(float valMin,float valMax);
+         void SetBargraphConf(float valMin,float valMax , uint8_t mode);
    };
 #endif

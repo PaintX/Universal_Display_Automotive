@@ -28,7 +28,7 @@
 
 static uint8_t    UDA_pin[UDA_Driver::UDA_MAX_PIN];
 static unsigned char idxRefresh = 0;
-
+static uint8_t    bargraphMode = 0;
 static UDA_Driver::s_DIGIT digit[7];
 
 static const unsigned char _char8Seg[] =
@@ -293,11 +293,17 @@ void _progressBar(float percent)
    {
       nbBoucles = (percent / 5.0)+1;
    }
-   for ( i = 0 ; i <  nbBoucles ; i++ )
+   if( bargraphMode == UDA_Driver::BARGRAPH_LINE )
    {
-      val |= posLed[i];
+      for ( i = 0 ; i <  nbBoucles ; i++ )
+      {
+         val |= posLed[i];
+      }
    }
-   
+   if ( bargraphMode == UDA_Driver::BARGRAPH_DOT )
+   {
+      val = posLed[nbBoucles];
+   }
    digit[4].value = ((val & 0xFFFF0000) >> 16);
    digit[3].value = (val & 0x0000FFFF);
    
@@ -305,6 +311,14 @@ void _progressBar(float percent)
 
 void UDA_Driver::SetBargraphConf(float valMin,float valMax)
 {
+   bargraphMode = UDA_Driver::BARGRAPH_LINE;
+   progressMin = valMin;
+   progressMax = valMax;
+}
+
+void UDA_Driver::SetBargraphConf(float valMin,float valMax , uint8_t mode)
+{
+   bargraphMode = mode;
    progressMin = valMin;
    progressMax = valMax;
 }
