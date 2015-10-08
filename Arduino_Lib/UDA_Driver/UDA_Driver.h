@@ -58,11 +58,13 @@
          // constructor
          UDA_Driver();
          
-         void UDA_AutoRefresh(bool enable,unsigned long period);
+         void Start( void );
+         void SetPin(uint8_t selectPin , uint8_t val );
+         void AutoRefresh(bool enable,unsigned long period);
          
-         void UDA_RefreshScreen(void); 
+         void RefreshScreen(void); 
          
-         void UDA_UpdateSeg(unsigned char idxDigit, unsigned short value);
+         void UpdateSeg(unsigned char idxDigit, unsigned short value);
          
          void PutChar(unsigned char idxDigit, unsigned char data);
          

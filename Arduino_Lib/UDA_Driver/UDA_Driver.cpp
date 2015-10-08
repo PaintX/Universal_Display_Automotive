@@ -145,14 +145,22 @@ UDA_Driver::UDA_Driver()
    UDA_pin[UDA_CSEL0] = 13;
    UDA_pin[UDA_CSEL1] = 11;
    UDA_pin[UDA_CSEL2] = 6;
+   
+   progressMin = 0.0;
+   progressMax = 100.0;
+}
 
+void UDA_Driver::Start( void )
+{
    for ( int i = 0 ; i < UDA_MAX_PIN ; i++ )
    {
       pinMode(UDA_pin[i], OUTPUT);
    }
-   
-   progressMin = 0.0;
-   progressMax = 100.0;
+}
+
+void UDA_Driver::SetPin(uint8_t selectPin , uint8_t val )
+{
+   UDA_pin[selectPin] = val;
 }
 
 //-----------------------------------------------------------------------------
@@ -196,12 +204,12 @@ void _RefreshScreen(void)
     idxRefresh = 0;
 }
 
-void UDA_Driver::UDA_RefreshScreen(void)
+void UDA_Driver::RefreshScreen(void)
 {
    _RefreshScreen();
 }
 
-void UDA_Driver::UDA_AutoRefresh(bool enable,unsigned long period)
+void UDA_Driver::AutoRefresh(bool enable,unsigned long period)
 {
    if ( enable )
    {
@@ -261,7 +269,7 @@ void UDA_Driver::PutFloat(float val, uint8_t nbDecimal)
    
 }
 
-const unsigned long posLed[21] = {    0x02000000  ,  0x01000000  ,  0x00080000  ,  0x00100000  ,  0x00800000  ,
+const unsigned long posLed[21] = {  0x02000000  ,  0x01000000  ,  0x00080000  ,  0x00100000  ,  0x00800000  ,
                                     0x00400000  ,  0x00040000  ,  0x00200000  ,  0x00020000  ,  0x00010000  ,
                                     0x00000001  ,  0x00000002  ,  0x00000004  ,  0x00000008  ,  0x00000010  ,
                                     0x00000020  ,  0x00000040  ,  0x00000080  ,  0x00000100  ,  0x00000200  ,
@@ -292,61 +300,7 @@ void _progressBar(float percent)
    
    digit[4].value = ((val & 0xFFFF0000) >> 16);
    digit[3].value = (val & 0x0000FFFF);
-/*
-  if ( percent <= 50.0 )
-  {
-      //-- tout eteint
-      digit[3].value = 0x0000;
-      digit[4].value = 0x0000;
-      if ( percent >= 45.0 )
-        digit[4].value |= 0x0001;
-      if ( percent >= 40.0 )
-        digit[4].value |= 0x0002;
-      if ( percent >= 35.0 )
-        digit[4].value |= 0x0020;
-      if ( percent >= 30.0 )
-        digit[4].value |= 0x0004;
-      if ( percent >= 25.0 )
-        digit[4].value |= 0x0040;
-      if ( percent >= 20.0 )
-        digit[4].value |= 0x0080;
-      if ( percent >= 15.0 )
-        digit[4].value |= 0x0010;
-      if ( percent >= 10.0 )
-        digit[4].value |= 0x0008;
-      if ( percent >= 5.0 )
-        digit[4].value |= 0x0100;
-      if ( percent >= 0.0 )
-        digit[4].value |= 0x0200;   
-   }
-   else
-   {
-      digit[4].value = 0x03FF;
-      digit[3].value = 0x0000;
-      if ( percent >= 50.0 )
-         digit[3].value |= 0x0001;
-      if ( percent >= 55.0 )
-         digit[3].value |= 0x0002; 
-      if ( percent >= 60.0 )
-         digit[3].value |= 0x0004;    
-      if ( percent >= 65.0 )
-         digit[3].value |= 0x0008;
-      if ( percent >= 70.0 )
-         digit[3].value |= 0x0010;
-      if ( percent >= 75.0 )
-         digit[3].value |= 0x0020; 
-      if ( percent >= 80.0 )
-         digit[3].value |= 0x0040; 
-      if ( percent >= 85.0 )
-         digit[3].value |= 0x0080; 
-      if ( percent >= 90.0 )
-         digit[3].value |= 0x0100;
-      if ( percent >= 95.0 )
-         digit[3].value |= 0x0200;
-      if ( percent >= 100.0 )
-         digit[3].value |= 0x0400;
-   }
-   */
+   
 }
 
 void UDA_Driver::SetBargraphConf(float valMin,float valMax)
