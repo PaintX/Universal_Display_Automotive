@@ -281,20 +281,16 @@ void _progressBar(float percent)
    uint8_t nbBoucles; 
    uint8_t i;
    
+   if ( percent >= 100.0 )
+      percent = 100.0;
    if ( percent <= 0.0 )
-   {
-      nbBoucles = 1;
-   }
-   else if ( percent >= 100.0 )
-   {
-      nbBoucles = 21;
-   }
-   else
-   {
-      nbBoucles = (percent / 5.0)+1;
-   }
+      percent = 0.0;  
+      
+   nbBoucles = (percent / 5.0);
+   
    if( bargraphMode == UDA_Driver::BARGRAPH_LINE )
    {
+      nbBoucles++;
       for ( i = 0 ; i <  nbBoucles ; i++ )
       {
          val |= posLed[i];
@@ -304,6 +300,7 @@ void _progressBar(float percent)
    {
       val = posLed[nbBoucles];
    }
+   
    digit[4].value = ((val & 0xFFFF0000) >> 16);
    digit[3].value = (val & 0x0000FFFF);
    
@@ -313,27 +310,19 @@ void UDA_Driver::SetBargraphConf(float valMin,float valMax)
 {
    bargraphMode = UDA_Driver::BARGRAPH_LINE;
    progressMin = valMin;
-   progressMax = valMax;
+   progressMax = valMax-0.5;
 }
 
 void UDA_Driver::SetBargraphConf(float valMin,float valMax , uint8_t mode)
 {
    bargraphMode = mode;
    progressMin = valMin;
-   progressMax = valMax;
+   progressMax = valMax-0.5;
 }
 
 void UDA_Driver::PutBargraph(float val)
 {
    float valueToDisp;
-   
-   if ( (val - progressMin) <= 0 )
-   {
-      valueToDisp = 0.0;
-   }
-   else
-   {
-      valueToDisp = ((val - progressMin) / ( progressMax - progressMin)*100.0);
-   }
+   valueToDisp = ((val - progressMin) / ( progressMax - progressMin)*100.0);
    _progressBar(valueToDisp);
 }
